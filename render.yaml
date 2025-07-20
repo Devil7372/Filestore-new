@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: telegram-filestore-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m bot.main
+    envVars:
+      - key: BOT_TOKEN
+        value: YOUR_BOT_TOKEN
+      - key: MONGO_URL
+        value: YOUR_MONGO_URI
+      - key: ADMINS
+        value: 123456789,987654321
+      - key: CHANNELS
+        value: -100XXXXXXXXXX,-100YYYYYYYYYY
