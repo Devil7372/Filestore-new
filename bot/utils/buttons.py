@@ -6,9 +6,9 @@ def get_file_button(file_id: str):
     Generate a file access button with optional shortener.
     """
     if USE_SHORTENER:
-        link = f"https://t.me/YourBotUsername?start=short_{file_id}"  # Replace with your bot username
+        link = f"https://t.me/OG_FILESTORE_ROBOT?start=short_{file_id}"  # Replace with your bot username
     else:
-        link = f"https://t.me/YourBotUsername?start=file_{file_id}"  # Replace with your bot username
+        link = f"https://t.me/OG_FILESTORE_ROBOT?start=file_{file_id}"  # Replace with your bot username
 
     buttons = InlineKeyboardMarkup(row_width=1)
     buttons.add(InlineKeyboardButton("📥 Download File", url=link))
