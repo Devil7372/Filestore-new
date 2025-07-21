@@ -4,5 +4,5 @@ motor==3.3.1
 dnspython==2.4.2
 pymongo==4.3.3
 python-dotenv==1.0.1
-aioruntime>=2.0.0,<3.0.0
-sniffio>=1.3.0,<2.0.0
+aioruntime>=3.0.0
+sniffio>=2.0.0
